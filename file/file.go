@@ -63,17 +63,17 @@ func (f File) Type() string {
 
 func (f File) SizePercentage() string {
 	if f.Parent != nil {
-		persentage := float64(f.Size) / float64(f.Parent.Size) * 100
-		return fmt.Sprintf("%.2f%s", persentage, "%")
+		percentage := float64(f.Size) / float64(f.Parent.Size) * 100
+		return fmt.Sprintf("%.2f%s", percentage, "%")
 	} else {
-		return "100&"
+		return "100%"
 	}
 }
 
 func (f File) FilesPercentage() string {
 	if f.Parent != nil {
-		persentage := float64(f.Files()) / float64(f.Parent.Files()) * 100
-		return fmt.Sprintf("%.2f%s", persentage, "%")
+		percentage := float64(f.Files()) / float64(f.Parent.Files()) * 100
+		return fmt.Sprintf("%.2f%s", percentage, "%")
 	} else {
 		return "100%"
 	}

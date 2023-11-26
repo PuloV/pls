@@ -15,7 +15,7 @@ var withVersion bool
 
 const INDEPTH_PREFIX = "    |"
 const FILE_POINTER = " - > "
-const CLI_VERSION = "0.0.1"
+const CLI_VERSION = "0.0.2"
 
 func init() {
 	flag.IntVar(&showLargestFiles, "l", -1, "shows the largest max files")
@@ -23,9 +23,9 @@ func init() {
 	flag.BoolVar(&withVersion, "v", false, "show cli version")
 	flag.BoolVar(&file.ShowConvertedSize, "s", false, "show file size")
 	flag.BoolVar(&file.ShowType, "t", false, "show file type")
-	flag.BoolVar(&file.ShowSizePercentage, "sp", false, "show size persentage")
+	flag.BoolVar(&file.ShowSizePercentage, "sp", false, "show size percentage ")
 	flag.BoolVar(&file.ShowFilesCount, "fc", false, "show files count version")
-	flag.BoolVar(&file.ShowFilesPercentage, "fp", false, "show files count persentage")
+	flag.BoolVar(&file.ShowFilesPercentage, "fp", false, "show files count percentage ")
 }
 
 func main() {
