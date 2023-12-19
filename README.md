@@ -39,6 +39,7 @@ Possible options:
 ## TODO
 
 A TODO list to be implemented:
+- [ ] Implement gracefull shutdown
 - [ ] Add goroutine pool in order to control the load
     - [ ] Add a flag to configure processed, by default to be the GOMAXPROC
     - [ ] Add `pool` package to handle the load
