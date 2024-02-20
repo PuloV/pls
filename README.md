@@ -40,6 +40,7 @@ Possible options:
 
 A TODO list to be implemented:
 - [ ] Implement gracefull shutdown
+- [ ] Implement `-f <VALUE>` filter flag that filters file names based on the provided regex or string
 - [ ] Add goroutine pool in order to control the load
     - [ ] Add a flag to configure processed, by default to be the GOMAXPROC
     - [ ] Add `pool` package to handle the load
